@@ -8,7 +8,7 @@ public class YardSaleUtilities
     public static void yardSaleWholeSale(String productName, double negotiatedPrice, int qty)
     {
 
-        System.out.println("Name \t\tQty\t\t\tPrice\t\tTotal");
+        System.out.println("Name \t\tQty  \t\tPrice\t\tTotal");
         String singlePriceString = "$"+String.format("%,.2f",negotiatedPrice);
         System.out.println("----\t\t-----\t\t-----\t\t-----");
         double totalPrice = negotiatedPrice*qty;
@@ -16,7 +16,7 @@ public class YardSaleUtilities
         System.out.println(productName+"\t\t"+qty+"\t\t\t"+singlePriceString+"\t\t"+totalPriceString);
         System.out.println();
         System.out.println("\t\tThank you, come again!");
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEEE, yyyy/MM/dd @h:mma");
         LocalDateTime now = LocalDateTime.now();
         System.out.println("purchased on: "+dtf.format(now));
     }
