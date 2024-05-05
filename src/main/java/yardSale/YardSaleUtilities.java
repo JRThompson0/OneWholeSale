@@ -16,6 +16,8 @@ public class YardSaleUtilities
         System.out.println(productName+"\t\t"+qty+"\t\t\t"+singlePriceString+"\t\t"+totalPriceString);
         System.out.println();
         System.out.println("\t\tThank you, come again!");
+        System.out.println();
+        System.out.println();
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEEE, yyyy/MM/dd @h:mma");
         LocalDateTime now = LocalDateTime.now();
         System.out.println("purchased on: "+dtf.format(now));
